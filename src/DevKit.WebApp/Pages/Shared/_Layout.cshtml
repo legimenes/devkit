@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - DevKit</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/DevKit.WebApp.styles.css" asp-append-version="true" />
+    @* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" asp-append-version="true"> *@
+</head>
+<body class="bg-zinc-950 text-gray-100">
+    <div class="flex h-screen">
+
+        <div id="sidebar" class="bg-purple-900 w-16 min-h-screen flex flex-col items-center relative">
+
+            <div class="flex items-center justify-center h-16 w-full border-b border-zinc-900">
+                <svg width="47.852" height="34.963" viewBox="0 0 67.852 54.963" xmlns="http://www.w3.org/2000/svg">
+                    <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#18181b" stroke-width="0.25mm" fill="#18181b">
+                        <path d="M 19.063 54.962 L 6.172 54.962 L 20.313 14.883 L 34.414 14.883 L 22.422 48.712 Q 30.117 48.712 37.676 43.985 Q 45.234 39.258 48.711 32.305 Q 51.836 26.172 51.836 22.071 Q 51.836 15.352 48.086 12.422 Q 44.727 9.844 37.773 9.844 L 0 9.844 L 6.016 0.001 L 43.828 0.001 Q 53.633 0.001 60.156 4.141 Q 67.852 9.024 67.852 18.243 Q 67.852 25.391 62.891 33.36 Q 56.328 43.868 43.828 49.649 Q 32.305 54.962 19.063 54.962 Z" />
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Menu -->
+            <nav class="flex-1 mt-4">
+
+                <ul class="space-y-2">
+                    <li class="menu-item relative group">
+                        <a href="#" class="flex justify-center items-center p-3 rounded-lg hover:bg-indigo-700">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    <li class="menu-item relative group" data-submenu='[{"label":"C#"},{"label":"Javscript to C#"}]'>
+                        <a href="#" class="flex justify-center items-center p-3 rounded-lg hover:bg-indigo-700">
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </li>
+                    <li class="menu-item relative group" data-submenu='[{"label":"Code Editor"},{"label":"Debugger"}]'>
+                        <a href="#" class="flex justify-center items-center p-3 rounded-lg hover:bg-indigo-700">
+                            <i class="fas fa-tools"></i>
+                        </a>
+                    </li>
+                    <li class="menu-item relative group">
+                        <a href="#" class="flex justify-center items-center p-3 rounded-lg hover:bg-indigo-700">
+                            <i class="fas fa-book"></i>
+                        </a>
+                    </li>
+                    <li class="menu-item relative group">
+                        <a href="#" class="flex justify-center items-center p-3 rounded-lg hover:bg-indigo-700">
+                            <i class="fas fa-cog"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Conteúdo principal -->
+        <div class="flex-1 flex flex-col">
+            <header class="bg-zinc-900 h-16 p-4 flex items-center justify-center">
+                <!-- <input type="text" placeholder="Search..." class="bg-zinc-800 text-white p-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                <div class="flex items-center space-x-4">
+                  <i class="fas fa-bell text-indigo-400 hover:text-indigo-300 cursor-pointer"></i>
+                  <div class="relative">
+                    <img src="https://via.placeholder.com/40" alt="User" class="w-10 h-10 rounded-full cursor-pointer">
+                    <div class="absolute top-0 right-0 w-3 h-3 bg-indigo-500 rounded-full"></div>
+                  </div>
+                </div> -->
+                <div class="flex items-center justify-center h-16 w-full border-b border-zinc-900">
+                    <svg width="330.791" height="38.704" viewBox="0 0 360.791 68.704" xmlns="http://www.w3.org/2000/svg">
+                        <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000000" stroke-width="0.25mm" fill="#000000">
+                            <path d="M 280.371 0.001 L 295.605 0.001 L 255.664 35.499 L 259.375 35.499 Q 266.211 35.499 266.211 41.505 Q 266.211 43.507 265.283 46.095 L 260.107 60.889 L 280.371 60.889 Q 278.125 68.702 266.162 68.702 L 249.072 68.702 Q 242.041 68.702 242.041 63.477 Q 242.041 62.257 242.48 60.889 L 248.975 41.407 L 223.486 64.112 Q 218.311 68.702 211.572 68.702 L 203.369 68.702 L 223.291 12.305 L 195.996 12.305 L 203.467 0.001 L 233.887 0.001 Q 242.236 0.001 242.236 6.3 Q 242.236 8.448 241.26 11.28 L 229.395 46.485 L 280.371 0.001 Z M 23.828 68.702 L 7.715 68.702 L 25.391 18.604 L 43.018 18.604 L 28.027 60.889 Q 37.646 60.889 47.095 54.981 Q 56.543 49.073 60.889 40.382 Q 64.795 32.716 64.795 27.589 Q 64.795 19.19 60.107 15.528 Q 55.908 12.305 47.217 12.305 L 0 12.305 L 7.52 0.001 L 54.785 0.001 Q 67.041 0.001 75.195 5.177 Q 84.814 11.28 84.814 22.804 Q 84.814 31.739 78.613 41.7 Q 70.41 54.835 54.785 62.061 Q 40.381 68.702 23.828 68.702 Z M 109.814 60.889 L 147.9 60.889 Q 146.875 64.649 143.213 66.798 Q 139.941 68.702 135.742 68.702 L 108.545 68.702 Q 84.814 68.702 84.814 54.395 Q 84.814 45.216 92.92 39.991 Q 99.902 35.499 109.521 35.499 L 116.602 35.499 Q 122.803 35.499 127.49 37.403 Q 133.74 39.942 134.033 45.118 Q 134.277 50.343 129.004 53.809 L 112.842 53.809 L 118.115 43.311 L 107.813 43.311 L 103.809 55.079 Q 103.467 56.104 103.467 56.934 Q 103.467 60.889 109.814 60.889 Z M 182.227 35.499 L 220.898 35.499 Q 219.678 39.796 215.283 41.846 Q 212.207 43.311 208.691 43.311 L 188.184 43.311 L 167.529 68.702 L 147.998 68.702 L 145.898 35.499 L 163.623 35.499 L 163.916 59.522 L 182.227 35.499 Z M 334.57 60.889 L 360.791 60.889 Q 358.496 68.702 348.584 68.702 L 323.682 68.702 Q 316.455 68.702 316.455 63.624 Q 316.455 62.354 316.992 60.889 L 323.193 43.311 L 315.186 43.311 L 318.262 35.499 Q 326.807 33.302 330.957 29.884 Q 335.645 26.026 340.967 15.919 L 350.488 15.919 L 343.604 35.499 L 356.201 35.499 Q 353.174 43.311 343.896 43.311 L 340.674 43.311 L 334.57 60.889 Z M 297.461 60.889 L 317.383 60.889 Q 316.113 65.186 312.109 67.237 Q 309.229 68.702 305.859 68.702 L 286.572 68.702 Q 279.59 68.702 279.59 62.843 Q 279.59 61.182 280.273 59.278 L 288.77 35.499 L 306.494 35.499 L 297.461 60.889 Z M 313.867 15.479 Q 313.867 20.362 310.083 23.78 Q 306.299 27.198 300.977 27.198 Q 295.557 27.198 291.772 23.78 Q 287.988 20.362 287.988 15.479 Q 287.988 10.645 291.772 7.227 Q 295.557 3.809 300.977 3.809 Q 306.299 3.809 310.083 7.227 Q 313.867 10.645 313.867 15.479 Z" />
+                        </g>
+                    </svg>
+                </div>
+            </header>
+            <main class="flex-1 p-6 overflow-auto">
+                <h1 class="text-2xl font-bold">Bem-vindo ao DevKit</h1>
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.menu-item').forEach(item => {
+          item.addEventListener('mouseenter', () => {
+            const link = item.querySelector('a');
+            const iconHtml = link.innerHTML;
+            let panel = document.createElement('div');
+            panel.className = 'absolute left-full top-0 bg-zinc-900 rounded-md shadow-lg w-48 z-50 hover-panel';
+
+            // título do menu (opcional)
+            let menuTitle = '';
+            if (item.dataset.submenu) {
+              if (iconHtml.includes('fa-home')) menuTitle = 'Dashboard';
+              if (iconHtml.includes('fa-code')) menuTitle = 'Code Snippets';
+              if (iconHtml.includes('fa-tools')) menuTitle = 'Tools';
+              if (iconHtml.includes('fa-book')) menuTitle = 'Documentation';
+              if (iconHtml.includes('fa-cog')) menuTitle = 'Settings';
+            } else {
+              if (iconHtml.includes('fa-home')) menuTitle = 'Dashboard';
+              if (iconHtml.includes('fa-book')) menuTitle = 'Documentation';
+              if (iconHtml.includes('fa-cog')) menuTitle = 'Settings';
+            }
+
+            // cabeçalho
+            panel.innerHTML = `<div class="flex items-center space-x-3 px-4 py-3 bg-zinc-800 text-zinc-950">
+                ${iconHtml}
+                <span class="font-semibold text-zinc-950">${menuTitle}</span>
+              </div>`;
+
+            // submenus se houver
+            if (item.dataset.submenu) {
+              let submenuItems = JSON.parse(item.dataset.submenu);
+              let ul = document.createElement('ul');
+              ul.className = 'space-y-1';
+              submenuItems.forEach(sm => {
+                let li = document.createElement('li');
+                li.innerHTML = `<a href="#" class="block text-xs m-2 p-2 rounded-lg hover:bg-zinc-800">${sm.label}</a>`;
+                ul.appendChild(li);
+              });
+              panel.appendChild(ul);
+            }
+
+            item.appendChild(panel);
+          });
+
+          item.addEventListener('mouseleave', () => {
+            const panel = item.querySelector('.hover-panel');
+            if (panel) panel.remove();
+          });
+        });
+    </script>
+</body>
+</html>
