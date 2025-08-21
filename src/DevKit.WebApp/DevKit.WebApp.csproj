@@ -1,11 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
-
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
-
   <ItemGroup>
 	<UpToDateCheckBuilt Include="wwwroot/css/app.css" Set="Css" />
   </ItemGroup>
@@ -18,5 +11,4 @@
 	</ItemGroup>
 	<Copy SourceFiles="@(FontAwesomeFiles)" DestinationFolder="wwwroot\webfonts\%(RecursiveDir)" SkipUnchangedFiles="true" />
   </Target>
-
 </Project>
